@@ -16,7 +16,7 @@ function App() {
   
   const [search, setSearch] = useState("")
 
-  const [stars, setStars] = useState(0)
+  const [stars, setStars] = useState(1)
   
 
   const [input, setInput] = useState({
@@ -27,8 +27,9 @@ function App() {
   });
 
   const addHandler = (newMovie) => {
-    input&&
+
     setMovies([...movies, newMovie])
+    console.log(newMovie);
   };
   
   return (
@@ -37,6 +38,7 @@ function App() {
       <Head 
       setSearch={setSearch}
       setStars={setStars}
+      stars={stars}
       />
       <main>
       <Form
