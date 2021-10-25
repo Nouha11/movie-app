@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 
 export default function Rate({setStars,stars}) {
     const indexArr = ([1,2,3,4,5])
