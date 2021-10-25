@@ -99,11 +99,14 @@ main {
 
 .Rstars {
   display: flex;
-  color: white;
   align-items: baseline;
   justify-content: center;
   margin-left: 80%;
   margin-top: 5%;
+}
+
+.Rstars .fa-star {
+  color: gold;
 }
 
 /* events */
